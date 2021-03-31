@@ -1,24 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='container'>
+      <h1>React with TypeScript</h1>
+      <form>
+        <label htmlFor="userName">Имя: </label>
+        <input 
+          type="text" 
+          id="userName" 
+          name="name" 
+          value="" 
+          />
+        <label htmlFor="userAge">Возраст: </label>
+        <input 
+          type="number" 
+          id="userAge" 
+          name="age" 
+          value="" />
+        <label htmlFor="userJob">Профессия: </label>
+        <input 
+          type="text" 
+          id="userJob" 
+          name="job" 
+          value="" />
+
+        <button type="submit">Add User</button>
+      </form>
     </div>
   );
 }
