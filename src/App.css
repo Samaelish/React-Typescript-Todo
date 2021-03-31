@@ -1,38 +1,80 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+body {
+  background: linear-gradient(#9198e5, #e66465);
+  background-attachment: fixed;
+  font-family: 'Montserrat', sans-serif;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+.container h1 {
   text-align: center;
+  color: #111;
+  font-family: 'Montserrat', sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container h2 {
+  text-align: center;
+  color: #111;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px 30px;
+  border-radius: 5px;
+  width: 500px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.5);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card label {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
-
-.App-link {
-  color: #61dafb;
+.card input {
+  width: 100%;
+  border-radius: 2px;
+  border: 1px solid grey;
+  margin-bottom: 15px;
+  height: 40px;
+  font-size: 24px;
+  background: rgba(0, 0, 0, 0.1);
+  color: 111;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card input:focus {
+  background: rgba(255, 255, 255, 0.1);
+}
+.submitBtn {
+  background-color: rgba(255, 255, 255, 0.4);
+  color: #111;
+  padding: 10px 15px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  outline: none;
+  margin-top: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 9999px;
+  transition: 0.5s;
+}
+.submitBtn:hover
+{
+    background: #730bec url(pixel2.png);
+    transition-delay: 0.5s;
+    color: #fff;
+    background-size: 180px;
+    animation: animate 0.8s steps(8) forwards;
+}
+@keyframes animate
+{
+    0%
+    {
+        background-position-y: 0;
+    }
+    100%
+    {
+        background-position-y: -480px;
+    }
 }

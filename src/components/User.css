@@ -1,0 +1,43 @@
+.row {
+    display: flex;
+    align-items: baseline;
+}
+.row h2 {
+    margin: 0;
+    margin-right: 10px;
+}
+.row p {
+    margin: 10px;
+    font-size: 24px;
+}
+.deleteBtn {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #111;
+    padding: 10px 15px;
+    border: 1px solid grey;
+    border-radius: 9999px;
+    margin-top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    outline: none;
+}
+.deleteBtn:hover
+{
+    background: #ec0b36 url(../pixel.png);
+    transition-delay: 0.5s;
+    color: #fff;
+    background-size: 180px;
+    animation: animate 0.8s steps(8) forwards;
+}
+@keyframes animate
+{
+    0%
+    {
+        background-position-y: 0;
+    }
+    100%
+    {
+        background-position-y: -480px;
+    }
+}
