@@ -3,4 +3,4 @@
 ### Функционал списка задач
 Удаление и добавление пользователей, основы Typescript и React
 ![App Pic](https://i.imgur.com/qwLlpUn.png)
-# [Демо на Netlify](https://condescending-ptolemy-b636a9.netlify.app/)
+# [Смотреть демо](https://react-typescript-todo-plum.vercel.app/)
