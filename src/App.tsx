@@ -92,6 +92,7 @@ const App: React.FC = ()  => {
           name="age" 
           value={usersState.currentUser.age} 
           onChange={onChangeHandler}
+          min="0"
           />
         <label htmlFor="userJob">Профессия: </label>
         <input 
